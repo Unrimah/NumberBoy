@@ -25,7 +25,7 @@ custom_styles/panel = SubResource( 1 )
 script = ExtResource( 2 )
 
 [node name="Player" type="Area2D" parent="."]
-position = Vector2( 0, 60 )
+position = Vector2( 0, 160 )
 script = ExtResource( 3 )
 
 [node name="NumberBoy_image" type="Sprite" parent="Player"]
@@ -36,3 +36,4 @@ region_rect = Rect2( 0, 0, 50, 80 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 position = Vector2( 25, 40 )
 shape = SubResource( 2 )
+[connection signal="fire" from="Player" to="." method="_on_Player_fire" binds= [ 0 ]]
