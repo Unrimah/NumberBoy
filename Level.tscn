@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Level.vs" type="Script" id=1]
 [ext_resource path="res://Playfield.vs" type="Script" id=2]
 [ext_resource path="res://Player.vs" type="Script" id=3]
 [ext_resource path="res://player.bmp" type="Texture" id=4]
+[ext_resource path="res://Task_font_1.tres" type="DynamicFont" id=5]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.313726, 0.423529, 0.741176, 1 )
@@ -36,4 +37,21 @@ region_rect = Rect2( 0, 0, 50, 80 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 position = Vector2( 25, 40 )
 shape = SubResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="Player"]
+margin_left = 50.0
+margin_top = 25.0
+margin_right = 120.0
+margin_bottom = 55.0
+
+[node name="Label" type="Label" parent="Player"]
+margin_left = 50.0
+margin_top = 17.0
+margin_right = 120.0
+margin_bottom = 63.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "5"
+align = 1
+valign = 1
 [connection signal="fire" from="Player" to="." method="_on_Player_fire" binds= [ 0 ]]
