@@ -54,4 +54,4 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "5"
 align = 1
 valign = 1
-[connection signal="fire" from="Player" to="." method="_on_Player_fire" binds= [ 0 ]]
+[connection signal="fire" from="Player" to="Playfield" method="_on_Player_fire" binds= [ 2 ]]
