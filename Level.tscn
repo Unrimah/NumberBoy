@@ -25,6 +25,14 @@ margin_bottom = 540.0
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 2 )
 
+[node name="ColorRect" type="ColorRect" parent="Playfield"]
+visible = false
+margin_left = 370.0
+margin_top = 195.0
+margin_right = 410.0
+margin_bottom = 235.0
+color = Color( 0.133333, 0.72549, 0.109804, 1 )
+
 [node name="Player" type="Area2D" parent="."]
 position = Vector2( 0, 60 )
 script = ExtResource( 3 )
