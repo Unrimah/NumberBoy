@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Levels/Level_02/Task_02.vs" type="Script" id=1]
+[ext_resource path="res://Task_font_1.tres" type="DynamicFont" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 59.9454, 15.0065 )
+
+[node name="Task" type="Area2D"]
+position = Vector2( 650.751, 255.55 )
+script = ExtResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 120.0
+margin_bottom = 30.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 60, 15 )
+shape = SubResource( 1 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_top = -8.0
+margin_right = 120.0
+margin_bottom = 40.0
+custom_fonts/normal_font = ExtResource( 2 )
+[connection signal="area_entered" from="." to="." method="_on_Task_area_entered"]
