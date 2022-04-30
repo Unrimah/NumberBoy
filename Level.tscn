@@ -57,6 +57,7 @@ margin_right = 120.0
 margin_bottom = 55.0
 
 [node name="Label" type="Label" parent="Player"]
+visible = false
 margin_left = 50.0
 margin_top = 17.0
 margin_right = 120.0
@@ -67,6 +68,15 @@ text = "5"
 align = 1
 valign = 1
 
+[node name="RichTextLabel" type="RichTextLabel" parent="Player"]
+margin_left = 50.0
+margin_top = 16.0
+margin_right = 120.0
+margin_bottom = 64.0
+custom_fonts/normal_font = ExtResource( 5 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "  0"
+
 [node name="Border" type="Area2D" parent="."]
 position = Vector2( 120, 60 )
 script = ExtResource( 6 )
@@ -74,4 +84,5 @@ script = ExtResource( 6 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Border"]
 position = Vector2( 0, 240 )
 shape = SubResource( 3 )
+[connection signal="digit" from="Player" to="Player" method="_on_Player_digit"]
 [connection signal="fire" from="Player" to="Playfield" method="_on_Player_fire" binds= [ 2 ]]
