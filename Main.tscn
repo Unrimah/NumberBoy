@@ -28,6 +28,7 @@ text = "+10"
 script = ExtResource( 3 )
 
 [node name="Button_lvl_02" type="Button" parent="."]
+visible = false
 margin_left = 76.0
 margin_top = 179.0
 margin_right = 224.0
@@ -36,6 +37,7 @@ rect_pivot_offset = Vector2( 43, 17 )
 text = "+20"
 
 [node name="Button_lvl_03" type="Button" parent="."]
+visible = false
 margin_left = 77.0
 margin_top = 238.0
 margin_right = 225.0
