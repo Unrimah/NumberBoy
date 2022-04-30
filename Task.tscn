@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Task.vs" type="Script" id=1]
 [ext_resource path="res://Veles-Regular.0.9.2.otf" type="DynamicFontData" id=2]
+[ext_resource path="res://Task_font_1.tres" type="DynamicFont" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 59.9454, 15.0065 )
@@ -24,6 +25,7 @@ position = Vector2( 60, 15 )
 shape = SubResource( 1 )
 
 [node name="Label" type="Label" parent="."]
+visible = false
 margin_top = -8.0
 margin_right = 120.0
 margin_bottom = 38.0
@@ -31,4 +33,10 @@ custom_fonts/font = SubResource( 2 )
 text = "3+3"
 align = 1
 valign = 1
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_top = -8.0
+margin_right = 120.0
+margin_bottom = 40.0
+custom_fonts/normal_font = ExtResource( 3 )
 [connection signal="area_entered" from="." to="." method="_on_Task_area_entered"]
