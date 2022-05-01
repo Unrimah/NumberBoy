@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Levels/Level_05/Task_05.vs" type="Script" id=1]
+[ext_resource path="res://Levels/Level_06/Task_06.vs" type="Script" id=1]
 [ext_resource path="res://Task_font_1.tres" type="DynamicFont" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]

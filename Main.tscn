@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Main.vs" type="Script" id=1]
 [ext_resource path="res://Title_font.tres" type="DynamicFont" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Levels/Level_03/Button_lvl_03.vs" type="Script" id=5]
 [ext_resource path="res://Levels/Level_04/Button_lvl_04.vs" type="Script" id=6]
 [ext_resource path="res://Levels/Level_05/Button_lvl_05.vs" type="Script" id=7]
+[ext_resource path="res://Levels/Level_06/Button_lvl_06.vs" type="Script" id=8]
 
 [node name="Main" type="Control"]
 anchor_right = 1.0
@@ -23,46 +24,55 @@ custom_fonts/font = ExtResource( 2 )
 text = "ЧислоБой"
 
 [node name="Button_lvl_01" type="Button" parent="."]
-margin_left = 77.0
-margin_top = 120.0
-margin_right = 225.0
-margin_bottom = 154.0
+margin_left = 438.219
+margin_top = 185.374
+margin_right = 586.219
+margin_bottom = 219.374
 rect_pivot_offset = Vector2( 43, 17 )
 text = "+ 10 (2)"
 script = ExtResource( 3 )
 
 [node name="Button_lvl_02" type="Button" parent="."]
-margin_left = 76.0
-margin_top = 179.0
-margin_right = 224.0
-margin_bottom = 213.0
+margin_left = 437.219
+margin_top = 244.374
+margin_right = 585.219
+margin_bottom = 278.374
 rect_pivot_offset = Vector2( 43, 17 )
 text = "- 10 (2)"
 script = ExtResource( 4 )
 
 [node name="Button_lvl_03" type="Button" parent="."]
-margin_left = 77.0
-margin_top = 238.0
-margin_right = 225.0
-margin_bottom = 272.0
+margin_left = 438.219
+margin_top = 303.374
+margin_right = 586.219
+margin_bottom = 337.374
 rect_pivot_offset = Vector2( 43, 17 )
 text = "+,- 20 (2)"
 script = ExtResource( 5 )
 
 [node name="Button_lvl_04" type="Button" parent="."]
-margin_left = 77.0
-margin_top = 300.05
-margin_right = 225.0
-margin_bottom = 334.05
+margin_left = 438.219
+margin_top = 365.424
+margin_right = 586.219
+margin_bottom = 399.424
 rect_pivot_offset = Vector2( 43, 17 )
 text = "+,- 100 (2)"
 script = ExtResource( 6 )
 
 [node name="Button_lvl_05" type="Button" parent="."]
-margin_left = 75.892
-margin_top = 359.884
-margin_right = 223.892
-margin_bottom = 393.884
+margin_left = 437.111
+margin_top = 425.258
+margin_right = 585.111
+margin_bottom = 459.258
 rect_pivot_offset = Vector2( 43, 17 )
 text = "* 10 (2)"
 script = ExtResource( 7 )
+
+[node name="Button_lvl_06" type="Button" parent="."]
+margin_left = 437.111
+margin_top = 482.875
+margin_right = 585.111
+margin_bottom = 516.875
+rect_pivot_offset = Vector2( 43, 17 )
+text = "/ 10 (2)"
+script = ExtResource( 8 )
