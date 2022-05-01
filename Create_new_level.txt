@@ -1,0 +1,19 @@
+
+1. Duplicate any "Level_XX" catalog to new one, under res://Levels. Let's take it as Level_NN
+2. In the new Level_NN catalog, rename all "Something_XX" to "Something_NN"
+3. Open Level_NN.tscn. Rename panel Level_XX to Level_NN
+4. In Playfield panel, change script from Playfield_XX.vs to Playfield_NN.vs, use Load option and Open dialog
+5. Open Playfield_NN.vs in editor (from filesystem browser):
+5.1 In _process function, find Preload res://Levels/Level_XX/Task_XX.tscn and change it to res://Levels/Level_NN/Task_NN.tscn using drag-and-drop from filesystem browser
+5.2 Adjust bricks_limit and task_delay if needed
+6. In Player Area2D, change script from Player_XX.vs to Player_NN.vs, use Load option and Open dialog
+7. Open Player_NN.vs in editor (from filesystem browser):
+7.1 Adjust player_pos_limit if needed: 5, 10 or 15 valuer recommended
+8. Open Task_NN.tscn, change script from Task_XX.vs to Task_NN.vs, use Load option and Open dialog
+9. Open Task_NN.vs in editor (from filesystem browser):
+9.1 In _ready function, provide new logic for tasks in this level, with creating correct_answer and proper text string
+10. Open Button_lvl_NN.vs in editor (from filesystem browser):
+10.1 In _pressed function, manually change res://Levels/Level_XX/Level_XX.tscn to res://Levels/Level_NN/Level_NN.tscn
+11. In Main.tscn, clone, place and name new Button_lvl_NN
+12. For Button_lvl_NN script - load proper Button_lvl_NN.vs
+13. Test, fix issues
