@@ -1,10 +1,12 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Main.vs" type="Script" id=1]
 [ext_resource path="res://Title_font.tres" type="DynamicFont" id=2]
 [ext_resource path="res://Levels/Level_01/Button_lvl_01.vs" type="Script" id=3]
 [ext_resource path="res://Levels/Level_02/Button_lvl_02.vs" type="Script" id=4]
 [ext_resource path="res://Levels/Level_03/Button_lvl_03.vs" type="Script" id=5]
+[ext_resource path="res://Levels/Level_04/Button_lvl_04.vs" type="Script" id=6]
+[ext_resource path="res://Levels/Level_05/Button_lvl_05.vs" type="Script" id=7]
 
 [node name="Main" type="Control"]
 anchor_right = 1.0
@@ -46,3 +48,21 @@ margin_bottom = 272.0
 rect_pivot_offset = Vector2( 43, 17 )
 text = "+,- 20 (2)"
 script = ExtResource( 5 )
+
+[node name="Button_lvl_04" type="Button" parent="."]
+margin_left = 77.0
+margin_top = 300.05
+margin_right = 225.0
+margin_bottom = 334.05
+rect_pivot_offset = Vector2( 43, 17 )
+text = "+,- 100 (2)"
+script = ExtResource( 6 )
+
+[node name="Button_lvl_05" type="Button" parent="."]
+margin_left = 75.892
+margin_top = 359.884
+margin_right = 223.892
+margin_bottom = 393.884
+rect_pivot_offset = Vector2( 43, 17 )
+text = "* 10 (2)"
+script = ExtResource( 7 )

@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://Levels/Level_01/Playfield_01.vs" type="Script" id=1]
-[ext_resource path="res://Levels/Level_01/Player_01.vs" type="Script" id=2]
+[ext_resource path="res://Levels/Level_05/Playfield_05.vs" type="Script" id=1]
+[ext_resource path="res://Levels/Level_05/Player_05.vs" type="Script" id=2]
 [ext_resource path="res://player.bmp" type="Texture" id=3]
 [ext_resource path="res://Task_font_1.tres" type="DynamicFont" id=4]
 [ext_resource path="res://Border.vs" type="Script" id=5]
@@ -18,7 +18,7 @@ extents = Vector2( 26.1004, 41.2446 )
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 0.566307, 239.07 )
 
-[node name="Level_01" type="Panel"]
+[node name="Level_05" type="Panel"]
 margin_right = 1024.0
 margin_bottom = 600.0
 custom_styles/panel = SubResource( 1 )
