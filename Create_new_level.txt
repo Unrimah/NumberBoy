@@ -16,4 +16,5 @@
 10.1 In _pressed function, manually change res://Levels/Level_XX/Level_XX.tscn to res://Levels/Level_NN/Level_NN.tscn
 11. In Main.tscn, clone, place and name new Button_lvl_NN
 12. For Button_lvl_NN script - load proper Button_lvl_NN.vs
-13. Test, fix issues
+13. Adjust button's focus top/bottom and other neighbours
+14. Test, fix issues
